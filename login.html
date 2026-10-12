@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เข้าสู่ระบบ | Game Account Store</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .login-card { width: 100%; max-width: 400px; border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <div class="card login-card p-4">
+        <div class="card-body">
+            <h3 class="text-center mb-4 font-weight-bold text-primary">เข้าสู่ระบบ</h3>
+            <form name="login" method="post" action="checkdata.php">
+                <div class="mb-3">
+                    <label class="form-label text-muted">ชื่อผู้ใช้งาน</label>
+                    <input type="text" class="form-control form-control-lg" name="txtUsername" required autofocus>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label text-muted">รหัสผ่าน</label>
+                    <input type="password" class="form-control form-control-lg" name="txtPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
